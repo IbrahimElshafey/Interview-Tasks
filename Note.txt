@@ -1,0 +1,1 @@
+I used entity core since the web API normal template not enabled on my machine, It need to intall large install file and the internet was very slow

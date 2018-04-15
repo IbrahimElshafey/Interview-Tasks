@@ -1,0 +1,17 @@
+﻿<div class="w3-row w3-margin" ng-controller="rolesCtrl">
+    <h3>Roles For User : <strong>{{userName}}</strong></h3>
+    <ul class="w3-ul" ng-repeat="role in roles">
+        <li>
+            <input class="w3-check" type="checkbox" ng-model="role.isActive">
+            <label>{{role.roleName}}</label>
+        </li>
+    </ul>
+    <button ng-click="saveChanges()"
+            class="w3-btn w3-green w3-ripple w3-margin">
+        &#10004; Save Changes
+    </button>
+    <button ng-click="changeView('users')"
+            class="w3-btn w3-green w3-ripple w3-margin">
+        &#10094; Back To Users
+    </button>
+</div>
